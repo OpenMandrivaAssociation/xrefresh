@@ -10,8 +10,8 @@ Source3: xrefresh.xpm.mini
 License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 
-BuildRequires: x11-util-macros	>= 1.1.5
-BuildRequires: libx11-devel	>= 1.1.3
+BuildRequires: libx11-devel >= 1.0.0
+BuildRequires: x11-util-macros >= 1.0.1
 
 %description
 Xrefresh is a simple X program that causes all or part of your screen to be
@@ -21,7 +21,7 @@ repainted. This is useful when system messages have messed up your screen.
 %setup -q -n %{name}-%{version}
 
 %build
-%configure	--x-includes=%{_includedir}\
+%configure2_5x	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 
 %make
