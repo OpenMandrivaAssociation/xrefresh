@@ -1,6 +1,6 @@
 Name: xrefresh
-Version: 1.0.2
-Release: %mkrel 6
+Version: 1.0.3
+Release: %mkrel 1
 Summary: Refresh all or part of an X screen
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -44,6 +44,6 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_bindir}/xrefresh
-%{_mandir}/man1/xrefresh.1x*
+%{_mandir}/man1/xrefresh.1*
 %{_datadir}/icons/xrefresh.xpm
 %{_datadir}/icons/*/xrefresh.xpm
