@@ -1,5 +1,5 @@
 Name: xrefresh
-Version: 1.0.3
+Version: 1.0.4
 Release: %mkrel 1
 Summary: Refresh all or part of an X screen
 Group: Development/X11
