@@ -1,6 +1,6 @@
 Name: xrefresh
 Version: 1.0.4
-Release: %mkrel 4
+Release: 5
 Summary: Refresh all or part of an X screen
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -8,7 +8,6 @@ Source1: xrefresh.xpm
 Source2: xrefresh.xpm.large
 Source3: xrefresh.xpm.mini
 License: MIT
-BuildRoot: %{_tmppath}/%{name}-root
 
 BuildRequires: pkgconfig(x11) >= 1.0.0
 BuildRequires: x11-util-macros >= 1.0.1
