@@ -10,7 +10,7 @@ Source3: xrefresh.xpm.mini
 License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 
-BuildRequires: libx11-devel >= 1.0.0
+BuildRequires: pkgconfig(x11) >= 1.0.0
 BuildRequires: x11-util-macros >= 1.0.1
 
 %description
