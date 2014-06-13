@@ -1,6 +1,6 @@
 Name:		xrefresh
 Version:	1.0.5
-Release:	5
+Release:	6
 Summary:	Refresh all or part of an X screen
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
