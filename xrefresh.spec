@@ -1,9 +1,9 @@
 Name:		xrefresh
-Version:	1.0.6
-Release:	2
+Version:	1.0.7
+Release:	1
 Summary:	Refresh all or part of an X screen
 Group:		Development/X11
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 Source1:	xrefresh.xpm
 Source2:	xrefresh.xpm.large
 Source3:	xrefresh.xpm.mini
@@ -20,13 +20,13 @@ repainted. This is useful when system messages have messed up your screen.
 %setup -q -n %{name}-%{version}
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
+%configure	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 # install icons
 mkdir -p %{buildroot}%{_datadir}/icons/large
