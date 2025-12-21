@@ -9,6 +9,11 @@ Source2:	xrefresh.xpm.large
 Source3:	xrefresh.xpm.mini
 License:	MIT
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(x11) >= 1.0.0
 BuildRequires:	x11-util-macros >= 1.0.1
 
